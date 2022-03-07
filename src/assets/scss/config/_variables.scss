@@ -1,0 +1,20 @@
+// colors
+:root {
+  // Christalle: hsl(233, 52%, 24%)
+  // Sky Blue: hsl(204, 81%, 71%)
+  // Chablis: hsl(29, 87%, 94%)
+
+  --primary-hue: 204;
+  --sat: 81%;
+  --lig: 71%;
+  --secondary-hue: 29;
+
+  --primary-color: hsl(var(--primary-hue), var(--sat), var(--lig));
+  --primary-color-alt: hsl(var(--primary-hue), var(--sat), 67%); /* -4% */
+
+  --title-color: hsl(var(--secondary-hue), 15%, 95%);
+  --text-color: hsl(var(--secondary-hue), 8%, 75%);
+  --text-color-light: hsl(var(--secondary-hue), 4%, 55%);
+  --body-color: hsl(var(--secondary-hue), 48%, 8%);
+  --container-color: hsl(var(--secondary-hue), 32%, 12%);
+}
