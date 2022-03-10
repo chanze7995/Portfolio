@@ -2,13 +2,14 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
 
 module.exports = {
-  context: path.resolve(__dirname, "./src"),
+  context: path.resolve(__dirname, "src"),
   entry: "./index.js",
   output: {
-    path: path.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash:7].bundle.js",
   },
   devServer: {
@@ -19,18 +20,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "assets/images/[hash][ext]",
-        },
-      },
-      {
-        test: /\.svg/,
-        type: "asset/inline",
-        generator: {
-          filename: "assets/icon/[hash][ext]",
-        },
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
         test: /\.s[ac]ss$/i,
@@ -52,6 +43,24 @@ module.exports = {
         test: /\.(js)$/,
         use: "babel-loader",
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/images/[hash][ext]",
+        },
+      },
+      {
+        test: /\.svg$/i,
+        type: "asset/inline",
+      },
+      {
+        test: /\.pdf$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/pdf/[ext][query]",
+        },
+      },
     ],
   },
   plugins: [
@@ -68,5 +77,13 @@ module.exports = {
       filename: "[name].[hash:7].css",
     }),
     new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "./assets/pdf/Chanze_CV.pdf",
+          to: "./assets/pdf/Chanze_CV.pdf",
+        },
+      ],
+    }),
   ],
 };
