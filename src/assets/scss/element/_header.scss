@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $body-color;
+  z-index: $z-fixed;
+}
+
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: $primary-color;
+  font-weight: $font-medium;
+  transition: 0.4s;
+}
+
+.nav__logo:hover {
+  color: $primary-color-alt;
+}
+
+.nav__menu {
+  position: fixed;
+  bottom: 1rem;
+  background-color: hsla($secondary-hue, 32%, 16%, 0.8);
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 2.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  display: flex;
+  padding: 0.4rem;
+  border-radius: 5rem;
+  font-size: 1.25rem;
+  color: $text-color;
+}
+
+.active-link {
+  background: linear-gradient(
+    180deg,
+    hsla($primary-hue, $sat, $lig, 1),
+    hsla($primary-hue, $sat, $lig, 0.2)
+  );
+  box-shadow: 0 0 16px hsla($primary-hue, $sat, $lig, 0.4);
+}
