@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
 
 module.exports = {
@@ -19,10 +18,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.html$/i,
-        loader: "html-loader",
-      },
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -58,7 +53,7 @@ module.exports = {
         test: /\.pdf$/i,
         type: "asset/resource",
         generator: {
-          filename: "assets/pdf/[ext][query]",
+          filename: "assets/pdf/[name][ext][query]",
         },
       },
     ],
@@ -77,13 +72,5 @@ module.exports = {
       filename: "[name].[hash:7].css",
     }),
     new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "./assets/pdf/Chanze_CV.pdf",
-          to: "./assets/pdf/Chanze_CV.pdf",
-        },
-      ],
-    }),
   ],
 };
