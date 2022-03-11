@@ -1,5 +1,5 @@
 .container {
-  max-width: 968px;
+  // max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -32,4 +32,25 @@
   display: block;
   font-size: $smaller-font-size;
   color: $text-color-light;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: $font-medium;
+  color: $body-color;
+  background-color: $primary-color;
+  transition: 0.4s;
+}
+
+.button--transparent {
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+}
+
+.button:hover {
+  background-color: $primary-color-alt;
+  color: $body-color;
 }
