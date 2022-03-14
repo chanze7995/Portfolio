@@ -45,6 +45,11 @@
   visibility: hidden;
 }
 
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 .services__modal-content {
   position: relative;
   padding: 4.5rem 1.5rem 2.5rem;
