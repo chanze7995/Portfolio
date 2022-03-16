@@ -29,6 +29,10 @@
   background-color: $container-color;
 }
 
+.sideProject__card-hide {
+  display: none;
+}
+
 .sideProject__img {
   border-radius: 1rem;
   margin-bottom: 0.75rem;

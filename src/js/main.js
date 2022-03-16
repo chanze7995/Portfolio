@@ -31,3 +31,29 @@ modalCloseBtn.forEach((item, id) => {
     closeModal(id);
   });
 });
+
+// FILTER SIDE PROJECT GALLERY
+const sideProjectFilters = document.querySelector(".sideProject__filters");
+const sideProjectCard = document.querySelectorAll(".sideProject__card");
+
+sideProjectFilters.addEventListener("click", (item) => {
+  let filterItem = item.target;
+  let activeItem = sideProjectFilters.querySelector(".active-item");
+  let filterType = filterItem.getAttribute("data-name");
+  const cardFilter = () => {
+    sideProjectCard.forEach((card) => {
+      let cardType = card.getAttribute("data-name");
+      if (filterType == cardType || filterType == "all") {
+        card.classList.remove("sideProject__card-hide");
+      } else {
+        card.classList.add("sideProject__card-hide");
+      }
+    });
+  };
+
+  if (filterItem.classList.contains("sideProject__item")) {
+    activeItem.classList.remove("active-item");
+    filterItem.classList.add("active-item");
+    cardFilter();
+  }
+});
