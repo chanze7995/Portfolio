@@ -57,3 +57,37 @@ sideProjectFilters.addEventListener("click", (item) => {
     cardFilter();
   }
 });
+
+// SCROLL SECTIONS TO ACTIVE NAVBAR
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+  sections.forEach((current) => {
+    const sectionTop = current.offsetTop - 58;
+    const sectionHeight = current.offsetHeight;
+    const sectionId = current.getAttribute("id");
+    const navbarBtn = document.querySelector(
+      `.nav__menu a[href*=${sectionId}]`
+    );
+    if (sectionTop < scrollY && scrollY <= sectionTop + sectionHeight) {
+      navbarBtn.classList.add("active-link");
+    } else {
+      navbarBtn.classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
+
+// const navItem = document.querySelectorAll(".nav__link");
+// const clickActive = (navId) => {
+//   console.log(navItem);
+//   navItem[navId].classList.add("active-link");
+// };
+
+// navItem.forEach((item, id) => {
+//   item.classList.remove("active-link");
+//   item.addEventListener("click", () => {
+//     clickActive(id);
+//   });
+// });
