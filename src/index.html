@@ -9,455 +9,455 @@
   <meta name="Keywords" content="<%= htmlWebpackPlugin.options.Keywords %>" />
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-  <header class="header" id="header">
-    <nav class="nav container">
-      <!-- <a href="#" class="nav__logo"><img src="./assets/images/logo_dark.png" alt=""></a> -->
-      <a href="#" class="nav__logo">Chanze</a>
-      <i class='bx bx-moon change-theme' id="theme-button"></i>
-      <div class="nav__menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class='bx bx-home-alt'></i>
+<body class="theme-dark">
+  <div class="app-root " id="app-root">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- <a href="#" class="nav__logo"><img src="./assets/images/logo_dark.png" alt=""></a> -->
+        <a href="#" class="nav__logo">Chanze</a>
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class='bx bx-home-alt'></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class='bx bx-user' ></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class='bx bx-list-check'></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class='bx bx-briefcase-alt-2' ></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#sideProject" class="nav__link">
+                <i class='bx bx-bookmarks' ></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class='bx bx-message-square-detail' ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__info">
+            <span class="home__greeting">你好!我是</span>
+            <h1 class="home__name">Chanze Wu 吳權哲</h1>
+            <h3 class="home__title">前端工程師</h3>
+            <div class="home__buttons">
+              <a download="" href="<%= require('./assets/pdf/Chanze-Wu_CV.pdf')%>" class="button button--transparent">下載 CV</a>
+              <a href="#about" class="button">關於我</a>
+            </div>
+          </div>
+          <div class="home__perfil">
+            <img src="<%= require('./assets/images/perfil.png')%>" alt="" class="home__img">
+          </div>
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank" class="home__social-link">
+              <i class='bx bxl-linkedin-square'></i>
             </a>
+            <a href="https://github.com/chanze7995" target="_blank" class="home__social-link">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://codepen.io/Chanze7995/" target="_blank" class="home__social-link">
+              <i class='bx bxl-codepen' ></i>
+            </a>
+          </div>
+          <a href="" class="home__scroll">
+            <i class='bx bx-mouse home__scroll-icon' ></i>
+            <span class="home__scroll-name">向下滑</span>
+          </a>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <span class="section__subtitle">我的介紹</span>
+        <h2 class="section__title">關於我</h2>
+        <div class="about__container container grid">
+          <img src="<%= require('./assets/images/main.png')%>" alt="" class="about__img">
+          <div class="about__data">
+            <div class="about__info">
+              <div class="about__box">
+                <i class='bx bx-award about__icon'></i>
+                <h3 class="about__title">經歷</h3>
+                <span class="about__subtitle"></span>
+              </div>
+              <div class="about__box">
+                <i class='bx bx-briefcase-alt about__icon'></i>
+                <h3 class="about__title">完成</h3>
+                <span class="about__subtitle"></span>
+              </div>
+              <div class="about__box">
+                <i class='bx bx-support about__icon'></i>
+                <h3 class="about__title"></h3>
+                <span class="about__subtitle"></span>
+              </div>
+            </div>
+            <p class="about__description">
+              對於不熟悉的事物從不感到畏懼，充滿好奇心的去查找、學習，擅長從0到1的新項目發展。多元興趣與開放的態度讓我在各領域上不會退卻。而對於時間管理也是相當的注重，在做任何事前先有所計畫，以避免過程的偏離及延宕，確保方向的正確。樂意嘗試不同的產業類型來增加自己的經驗並累積能力。給自己有一個新的突破、持續學習嘗試新事物的機會。
+            </p>
+            <a href="#contact" class="button">聯絡我</a>
+          </div>
+        </div>
+      </section>
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">我的專長</span>
+        <h2 class="section__title">技術</h2>
+        <div class="skills__container container grid">
+          <div class="skills__content">
+            <h3 class="skills__title">前端工程師</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Html</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Webpack</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Vue.js</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__content">
+            <h3 class="skills__title">設計師</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Html</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Webpack</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Vue.js</h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services section" id="services">
+        <span class="section__subtitle">我的能力</span>
+        <h2 class="section__title">我能勝任</h2>
+        <div class="services__container container grid">
+          <div class="services__card">
+            <h3 class="services__title">前端工程師</h3>
+            <span class="services__button">了解更多 <i class='bx bx-right-arrow-alt services__icon'></i></span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class='bx bx-x services__modal-close'></i>
+                <h3 class="services__modal-title">前端工程師</h3>
+                <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">UI/UX 設計師</h3>
+            <span class="services__button">了解更多 <i class='bx bx-right-arrow-alt services__icon'></i></span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class='bx bx-x services__modal-close'></i>
+                <h3 class="services__modal-title">UI/UX 設計師</h3>
+                <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="services__card">
+            <h3 class="services__title">視覺設計師</h3>
+            <span class="services__button">了解更多 <i class='bx bx-right-arrow-alt services__icon'></i></span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class='bx bx-x services__modal-close'></i>
+                <h3 class="services__modal-title">視覺設計師</h3>
+                <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">一些描述</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sideProject section" id="sideProject">
+        <span class="section__subtitle">作品集</span>
+        <h2 class="section__title">個人專案</h2>
+        <div class="sideProject__filters">
+          <span class="sideProject__item active-item" data-name="all">全部</span>
+          <span class="sideProject__item" data-name="app">小功能</span>
+          <span class="sideProject__item" data-name="website">網站</span>
+          <span class="sideProject__item" data-name="layout">切版</span>
+        </div>
+        <div class="sideProject__container container grid">
+          <div class="sideProject__card" data-name="layout">
+            <img src="<%=require('./assets/images/work1.jpg')%>" alt="" class="sideProject__img">
+            <h3 class="sideProject__title">名稱</h3>
+            <a href="" class="sideProject__button">
+              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
+            </a>
+          </div>
+          <div class="sideProject__card" data-name="website">
+            <img src="<%=require('./assets/images/work5.jpg')%>" alt="" class="sideProject__img">
+            <h3 class="sideProject__title">名稱</h3>
+            <a href="" class="sideProject__button">
+              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
+            </a>
+          </div>
+          <div class="sideProject__card" data-name="app">
+            <img src="<%=require('./assets/images/work3.jpg')%>" alt="" class="sideProject__img">
+            <h3 class="sideProject__title">名稱</h3>
+            <a href="" class="sideProject__button">
+              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
+            </a>
+          </div>
+          <div class="sideProject__card" data-name="layout">
+            <img src="<%=require('./assets/images/work1.jpg')%>" alt="" class="sideProject__img">
+            <h3 class="sideProject__title">名稱</h3>
+            <a href="" class="sideProject__button">
+              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
+            </a>
+          </div>
+          <div class="sideProject__card" data-name="app">
+            <img src="<%=require('./assets/images/work4.jpg')%>" alt="" class="sideProject__img">
+            <h3 class="sideProject__title">名稱</h3>
+            <a href="" class="sideProject__button">
+              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">更進一步</span>
+        <h2 class="section__title">與我聯繫</h2>
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">聯絡方式</h3>
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">chanze7995@gmail.com</span>
+                <a href="mailto:chanze7995@gmail.com" target="_blank" class="contact__button">
+                  聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+              <div class="contact__card">
+                <i class="bx bx-phone contact__card-icon" ></i>
+                <h3 class="contact__card-title">Phone</h3>
+                <span class="contact__card-data">0963917660</span>
+                <a href="tel:+886-963917660" target="_blank" class="contact__button">
+                  聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+              <div class="contact__card">
+                <i class="bx bxl-linkedin-square contact__card-icon" ></i>
+                <h3 class="contact__card-title">LinkedIn</h3>
+                <span class="contact__card-data">吳權哲 (Chanze Wu)</span>
+                <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank" class="contact__button">
+                  聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__content">
+            <h3 class="contact__title">留下你的想法</h3>
+            <form action="" class="contact__form">
+              <div class="contact__form-box">
+                <label for="" class="contact__form-tag">姓名</label>
+                <input type="text" placeholder="輸入你的名字" class="contact__form-input">
+              </div>
+              <div class="contact__form-box">
+                <label for="" class="contact__form-tag">電子信箱</label>
+                <input type="email" placeholder="輸入你的電子信箱" class="contact__form-input">
+              </div>
+              <div class="contact__form-box contact__form-area">
+                <label for="" class="contact__form-tag">內容</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="留下建議" class="contact__form-input"></textarea>
+              </div>
+              <button class="button">
+                傳送
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Chanze</h1>
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">About</a>
           </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class='bx bx-user' ></i>
-            </a>
+          <li>
+            <a href="#services" class="footer__link">Services</a>
           </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class='bx bx-list-check'></i>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">
-              <i class='bx bx-briefcase-alt-2' ></i>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#sideProject" class="nav__link">
-              <i class='bx bx-bookmarks' ></i>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">
-              <i class='bx bx-message-square-detail' ></i>
-            </a>
+          <li>
+            <a href="#sideProject" class="footer__link">Side Project</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="main">
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__info">
-          <span class="home__greeting">你好!我是</span>
-          <h1 class="home__name">Chanze Wu 吳權哲</h1>
-          <h3 class="home__title">前端工程師</h3>
-          <div class="home__buttons">
-            <a download="" href="<%= require('./assets/pdf/Chanze-Wu_CV.pdf')%>" class="button button--transparent">下載 CV</a>
-            <a href="#about" class="button">關於我</a>
-          </div>
-        </div>
-        <div class="home__perfil">
-          <img src="<%= require('./assets/images/perfil.png')%>" alt="" class="home__img">
-        </div>
-        <div class="home__social">
-          <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank" class="home__social-link">
-            <i class='bx bxl-linkedin-square'></i>
+        <ul class="footer__social">
+          <a href="" class="footer__social-link">
+            <i class="bx bxl-facebook"></i>
           </a>
-          <a href="https://github.com/chanze7995" target="_blank" class="home__social-link">
-            <i class='bx bxl-github'></i>
+          <a href="" class="footer__social-link">
+            <i class="bx bxl-instagram"></i>
           </a>
-          <a href="https://codepen.io/Chanze7995/" target="_blank" class="home__social-link">
-            <i class='bx bxl-codepen' ></i>
+          <a href="" class="footer__social-link">
+            <i class="bx bxl-twitter"></i>
           </a>
-        </div>
-        <a href="" class="home__scroll">
-          <i class='bx bx-mouse home__scroll-icon' ></i>
-          <span class="home__scroll-name">向下滑</span>
-        </a>
+        </ul>
+        <span class="footer__copyright">&#169; Chanze Wu. All rights reserved</span>
       </div>
-    </section>
-    <section class="about section" id="about">
-      <span class="section__subtitle">我的介紹</span>
-      <h2 class="section__title">關於我</h2>
-      <div class="about__container container grid">
-        <img src="<%= require('./assets/images/main.png')%>" alt="" class="about__img">
-        <div class="about__data">
-          <div class="about__info">
-            <div class="about__box about__icon">
-              <i class='bx bx-award'></i>
-              <h3 class="about__title">經歷</h3>
-              <span class="about__subtitle"></span>
-            </div>
-            <div class="about__box about__icon">
-              <i class='bx bx-briefcase-alt'></i>
-              <h3 class="about__title">完成</h3>
-              <span class="about__subtitle"></span>
-            </div>
-            <div class="about__box">
-              <i class='bx bx-support about__icon'></i>
-              <h3 class="about__title"></h3>
-              <span class="about__subtitle"></span>
-            </div>
-          </div>
-          <p class="about__description">
-            對於不熟悉的事物從不感到畏懼，充滿好奇心的去查找、學習，擅長從0到1的新項目發展。多元興趣與開放的態度讓我在各領域上不會退卻。而對於時間管理也是相當的注重，在做任何事前先有所計畫，以避免過程的偏離及延宕，確保方向的正確。樂意嘗試不同的產業類型來增加自己的經驗並累積能力。給自己有一個新的突破、持續學習嘗試新事物的機會。
-          </p>
-          <a href="#contact" class="button">聯絡我</a>
-        </div>
-      </div>
-    </section>
-    <section class="skills section" id="skills">
-      <span class="section__subtitle">我的專長</span>
-      <h2 class="section__title">技術</h2>
-      <div class="skills__container container grid">
-        <div class="skills__content">
-          <h3 class="skills__title">前端工程師</h3>
-          <div class="skills__box">
-            <div class="skills__group">
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Html</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">CSS</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Javascript</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-            </div>
-            <div class="skills__group">
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Webpack</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Git</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Vue.js</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skills__content">
-          <h3 class="skills__title">設計師</h3>
-          <div class="skills__box">
-            <div class="skills__group">
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Html</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">CSS</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Javascript</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-            </div>
-            <div class="skills__group">
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Webpack</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Git</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <i class="bx bxs-badge-check"></i>
-                <div>
-                  <h3 class="skills__name">Vue.js</h3>
-                  <span class="skills__level"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services section" id="services">
-      <span class="section__subtitle">我的能力</span>
-      <h2 class="section__title">我能勝任</h2>
-      <div class="services__container container grid">
-        <div class="services__card">
-          <h3 class="services__title">前端工程師</h3>
-          <span class="services__button">了解更多 <i class='bx bx-right-arrow-alt services__icon'></i></span>
-          <div class="services__modal">
-            <div class="services__modal-content">
-              <i class='bx bx-x services__modal-close'></i>
-              <h3 class="services__modal-title">前端工程師</h3>
-              <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
-              <ul class="services__modal-list">
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="services__card">
-          <h3 class="services__title">UI/UX 設計師</h3>
-          <span class="services__button">了解更多 <i class='bx bx-right-arrow-alt services__icon'></i></span>
-          <div class="services__modal">
-            <div class="services__modal-content">
-              <i class='bx bx-x services__modal-close'></i>
-              <h3 class="services__modal-title">UI/UX 設計師</h3>
-              <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
-              <ul class="services__modal-list">
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="services__card">
-          <h3 class="services__title">視覺設計師</h3>
-          <span class="services__button">了解更多 <i class='bx bx-right-arrow-alt services__icon'></i></span>
-          <div class="services__modal">
-            <div class="services__modal-content">
-              <i class='bx bx-x services__modal-close'></i>
-              <h3 class="services__modal-title">視覺設計師</h3>
-              <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
-              <ul class="services__modal-list">
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-                <li class="services__modal-item">
-                  <i class="bx bx-check services__modal-icon"></i>
-                  <p class="services__modal-info">一些描述</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sideProject section" id="sideProject">
-      <span class="section__subtitle">作品集</span>
-      <h2 class="section__title">個人專案</h2>
-      <div class="sideProject__filters">
-        <span class="sideProject__item active-item" data-name="all">全部</span>
-        <span class="sideProject__item" data-name="app">小功能</span>
-        <span class="sideProject__item" data-name="website">網站</span>
-        <span class="sideProject__item" data-name="layout">切版</span>
-      </div>
-      <div class="sideProject__container container grid">
-        <div class="sideProject__card" data-name="layout">
-          <img src="<%=require('./assets/images/work1.jpg')%>" alt="" class="sideProject__img">
-          <h3 class="sideProject__title">名稱</h3>
-          <a href="" class="sideProject__button">
-            Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-          </a>
-        </div>
-        <div class="sideProject__card" data-name="website">
-          <img src="<%=require('./assets/images/work5.jpg')%>" alt="" class="sideProject__img">
-          <h3 class="sideProject__title">名稱</h3>
-          <a href="" class="sideProject__button">
-            Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-          </a>
-        </div>
-        <div class="sideProject__card" data-name="app">
-          <img src="<%=require('./assets/images/work3.jpg')%>" alt="" class="sideProject__img">
-          <h3 class="sideProject__title">名稱</h3>
-          <a href="" class="sideProject__button">
-            Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-          </a>
-        </div>
-        <div class="sideProject__card" data-name="layout">
-          <img src="<%=require('./assets/images/work1.jpg')%>" alt="" class="sideProject__img">
-          <h3 class="sideProject__title">名稱</h3>
-          <a href="" class="sideProject__button">
-            Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-          </a>
-        </div>
-        <div class="sideProject__card" data-name="app">
-          <img src="<%=require('./assets/images/work4.jpg')%>" alt="" class="sideProject__img">
-          <h3 class="sideProject__title">名稱</h3>
-          <a href="" class="sideProject__button">
-            Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="contact section" id="contact">
-      <span class="section__subtitle">更進一步</span>
-      <h2 class="section__title">與我聯繫</h2>
-      <div class="contact__container container grid">
-        <div class="contact__content">
-          <h3 class="contact__title">聯絡方式</h3>
-          <div class="contact__info">
-            <div class="contact__card">
-              <i class="bx bx-mail-send contact__card-icon"></i>
-              <h3 class="contact__card-title">Email</h3>
-              <span class="contact__card-data">chanze7995@gmail.com</span>
-              <a href="mailto:chanze7995@gmail.com" target="_blank" class="contact__button">
-                聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-            <div class="contact__card">
-              <i class="bx bx-phone contact__card-icon" ></i>
-              <h3 class="contact__card-title">Phone</h3>
-              <span class="contact__card-data">0963917660</span>
-              <a href="tel:+886-963917660" target="_blank" class="contact__button">
-                聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-            <div class="contact__card">
-              <i class="bx bxl-linkedin-square contact__card-icon" ></i>
-              <h3 class="contact__card-title">LinkedIn</h3>
-              <span class="contact__card-data">吳權哲 (Chanze Wu)</span>
-              <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank" class="contact__button">
-                聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="contact__content">
-          <h3 class="contact__title">留下你的想法</h3>
-          <form action="" class="contact__form">
-            <div class="contact__form-box">
-              <label for="" class="contact__form-tag">姓名</label>
-              <input type="text" placeholder="輸入你的名字" class="contact__form-input">
-            </div>
-            <div class="contact__form-box">
-              <label for="" class="contact__form-tag">電子信箱</label>
-              <input type="email" placeholder="輸入你的電子信箱" class="contact__form-input">
-            </div>
-            <div class="contact__form-box contact__form-area">
-              <label for="" class="contact__form-tag">內容</label>
-              <textarea name="" id="" cols="30" rows="10" placeholder="留下建議" class="contact__form-input"></textarea>
-            </div>
-            <button class="button">
-              傳送
-            </button>
-          </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__container container">
-      <h1 class="footer__title">Chanze</h1>
-      <ul class="footer__list">
-        <li>
-          <a href="#about" class="footer__link">About</a>
-        </li>
-        <li>
-          <a href="#services" class="footer__link">Services</a>
-        </li>
-        <li>
-          <a href="#sideProject" class="footer__link">Side Project</a>
-        </li>
-      </ul>
-      <ul class="footer__social">
-        <a href="" class="footer__social-link">
-          <i class="bx bxl-facebook"></i>
-        </a>
-        <a href="" class="footer__social-link">
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <a href="" class="footer__social-link">
-          <i class="bx bxl-twitter"></i>
-        </a>
-      </ul>
-      <span class="footer__copyright">&#169; Chanze Wu. All rights reserved</span>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

@@ -15,8 +15,10 @@
 }
 
 .home__greeting {
+  @include themify($themes) {
+    color: themed("title-color");
+  }
   display: block;
-  color: $title-color;
   margin-bottom: 0.25rem;
 }
 
@@ -25,7 +27,9 @@
 }
 
 .home__title {
-  color: $text-color;
+  @include themify($themes) {
+    color: themed("text-color");
+  }
   margin-bottom: 2.5rem;
 }
 
@@ -69,6 +73,9 @@
 }
 
 .home__social::after {
+  @include themify($themes) {
+    background-color: themed(main-color);
+  }
   content: "";
   width: 32px;
   height: 2px;
@@ -77,14 +84,17 @@
 }
 
 .home__social-link {
+  @include themify($themes) {
+    background-color: themed(container-color);
+    color: themed(main-color);
+    box-shadow: themed(btn-box-shadow);
+  }
   display: flex;
   width: max-content;
   padding: 0.25rem;
   border-radius: 0.25rem;
   font-size: 1rem;
   transition: 0.4s;
-  background-color: $container-color;
-  color: $primary-color;
 }
 
 .home__social-link:hover {
@@ -93,13 +103,15 @@
 }
 
 .home__scroll {
+  @include themify($themes) {
+    color: themed(main-color);
+  }
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
   right: -1.5rem;
   right: 1rem;
   bottom: 4rem;
-  color: $primary-color;
 }
 
 .home__scroll-icon {

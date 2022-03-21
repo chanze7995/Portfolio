@@ -5,9 +5,12 @@
 }
 
 .services__card {
+  @include themify($themes) {
+    background-color: themed(container-color);
+    box-shadow: themed(card-box-shadow);
+  }
   padding: 3rem 1.5rem 1.5rem;
   border-radius: 1rem;
-  background-color: $container-color;
 }
 
 .services__title {
@@ -51,9 +54,11 @@
 }
 
 .services__modal-content {
+  @include themify($themes) {
+    background-color: themed(body-color);
+  }
   position: relative;
   padding: 4.5rem 1.5rem 2.5rem;
-  background-color: $body-color;
   border-radius: 1.5rem;
 }
 

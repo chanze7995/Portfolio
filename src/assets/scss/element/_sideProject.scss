@@ -11,22 +11,29 @@
 }
 
 .sideProject__item {
+  @include themify($themes) {
+    color: themed(title-color);
+  }
   padding: 0.25rem 0.75rem;
-  color: $title-color;
   font-weight: $font-medium;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .active-item {
+  @include themify($themes) {
+    color: themed(body-color);
+  }
   background-color: $primary-color;
-  color: $body-color;
 }
 
 .sideProject__card {
+  @include themify($themes) {
+    background-color: themed(container-color);
+    box-shadow: themed(card-box-shadow);
+  }
   padding: 1rem;
   border-radius: 1rem;
-  background-color: $container-color;
 }
 
 .sideProject__card-hide {

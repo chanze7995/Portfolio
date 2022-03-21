@@ -1,15 +1,21 @@
 .header {
+  @include themify($themes) {
+    background-color: themed(body-color);
+  }
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $body-color;
   z-index: $z-fixed;
+  transition: 0.4s;
 }
 
 // CHANGE BACKGROUND HEADER CLASS
 .scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+}
+.theme-dark .scroll-header {
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
 }
 
 .nav {
@@ -29,6 +35,16 @@
   color: $primary-color-alt;
 }
 
+.change-theme {
+  font-size: 1.25rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: $primary-color;
+}
+
 .nav__menu {
   position: fixed;
   bottom: 1rem;
@@ -37,6 +53,11 @@
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+
+.theme-light .nav__menu {
+  background-color: hsla($secondary-hue, 32%, 90%, 0.8);
 }
 
 .nav__list {
@@ -46,14 +67,19 @@
 }
 
 .nav__link {
+  @include themify($themes) {
+    color: themed(text-color);
+  }
   display: flex;
   padding: 0.4rem;
   border-radius: 5rem;
   font-size: 1.25rem;
-  color: $text-color;
 }
 
 .active-link {
+  @include themify($themes) {
+    color: themed(title-color);
+  }
   background: linear-gradient(
     180deg,
     hsla($primary-hue, $sat, $lig, 1),

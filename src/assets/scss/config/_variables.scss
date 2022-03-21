@@ -2,6 +2,7 @@
 // Christalle: hsl(233, 52%, 24%)
 // Sky Blue: hsl(204, 81%, 71%)
 // Chablis: hsl(29, 87%, 94%)
+
 $primary-hue: 204;
 $sat: 81%;
 $lig: 71%;
@@ -10,11 +11,57 @@ $secondary-hue: 29;
 $primary-color: hsl($primary-hue, $sat, $lig);
 $primary-color-alt: hsl($primary-hue, $sat, 51%); /* -4% */
 
-$title-color: hsl($secondary-hue, 15%, 95%);
-$text-color: hsl($secondary-hue, 8%, 75%);
-$text-color-light: hsl($secondary-hue, 4%, 55%);
-$body-color: hsl($secondary-hue, 48%, 8%);
-$container-color: hsl($secondary-hue, 32%, 12%);
+//  Theme color
+$themes: (
+  dark: (
+    main-color: $primary-color,
+    title-color: hsl($secondary-hue, 15%, 95%),
+    text-color: hsl($secondary-hue, 8%, 75%),
+    text-color-light: hsl($secondary-hue, 4%, 55%),
+    body-color: hsl($secondary-hue, 48%, 8%),
+    container-color: hsl($secondary-hue, 32%, 12%),
+  ),
+  light: (
+    main-color: hsl($secondary-hue, 15%, 15%),
+    title-color: hsl($secondary-hue, 15%, 15%),
+    text-color: hsl($secondary-hue, 8%, 35%),
+    text-color-light: hsl($secondary-hue, 7%, 55%),
+    body-color: hsl($secondary-hue, 100%, 99%),
+    container-color: #fff,
+    btn-box-shadow: 0 2px 8px hsla($secondary-hue, 48%, 8%, 0.1),
+    card-box-shadow: 0 2px 16px hsla($secondary-hue, 48%, 8%, 0.1),
+  ),
+);
+
+@mixin themify($themes: $themes) {
+  // 執行迴圈處理不同主題所需生成的樣式
+  @each $theme, $map in $themes {
+    // 產生 selector
+    .theme-#{$theme} & {
+      // 設定全域 $theme-map 變數預設值
+      $theme-map: () !global;
+      // 取出目前對應主題的所有設定值並放入全域的 $theme-map 變數內
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      // 輸出所有使用這個 mixin 的所有設定，會搭配 @function themed 使用可取得對應設定值
+      @content;
+      // 佈景樣式產生完畢清空全域變數 $theme-map
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  // 依據傳入的 key 值，由變數 $theme-map 取得對應的設定值並回傳
+  @return map-get($theme-map, $key);
+}
 
 // z index
 $z-tooltip: 10;

@@ -91,3 +91,38 @@ window.addEventListener("scroll", scrollActive);
 //     clickActive(id);
 //   });
 // });
+
+//  THEME CHANGE
+const themeButton = document.getElementById("theme-button");
+const body = document.body;
+const iconTheme = "bx-sun";
+// Previously selected topic
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () =>
+  body.classList.contains("theme-light") ? "light" : "dark";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "bx bx-sun" : "bx bx-moon";
+
+// Validate user previously chose a topic
+if (selectedTheme == "light") {
+  body.classList.remove("theme-dark");
+  body.classList.add("theme-light");
+  themeButton.classList.toggle(iconTheme);
+}
+
+// The theme manually with the button
+themeButton.addEventListener("click", () => {
+  themeButton.classList.toggle(iconTheme);
+  if (body.classList.contains("theme-dark")) {
+    body.classList.remove("theme-dark");
+    body.classList.add("theme-light");
+  } else {
+    body.classList.remove("theme-light");
+    body.classList.add("theme-dark");
+  }
+  // Save the current theme and icon
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});

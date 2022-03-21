@@ -8,7 +8,9 @@
 
 .footer__title,
 .footer__link {
-  color: $body-color;
+  @include themify($themes) {
+    color: themed(body-color);
+  }
 }
 
 .footer__title {
@@ -30,18 +32,22 @@
 }
 
 .footer__social-link {
+  @include themify($themes) {
+    background-color: themed(body-color);
+  }
   display: inline-flex;
   padding: 0.25rem;
   border-radius: 0.25rem;
-  background-color: $body-color;
   font-size: 1rem;
   color: $primary-color;
 }
 
 .footer__copyright {
+  @include themify($themes) {
+    color: themed(container-color);
+  }
   display: block;
   text-align: center;
   margin-top: 2.5rem;
   font-size: $small-font-size;
-  color: $container-color;
 }

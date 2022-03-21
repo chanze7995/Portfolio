@@ -4,9 +4,12 @@
 }
 
 .skills__content {
+  @include themify($themes) {
+    background-color: themed(container-color);
+    box-shadow: themed(card-box-shadow);
+  }
   padding: 1.5rem;
   border-radius: 1.25rem;
-  background-color: $container-color;
 }
 
 .skills__title {
