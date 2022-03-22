@@ -63,7 +63,8 @@ module.exports = {
       title: `Chanze's Portfolio Website`,
       filename: "index.html",
       template: path.resolve(__dirname, "./src/index.html"), //模板位置
-      viewport: "width=640, user-scalable=no",
+      // viewport: "width=640, user-scalable=no",
+      viewport: "width=device-width,initial-scale=1",
       description: "個人作品集",
       Keywords: "前端開發、前端、工程師、作品集",
       // inject: "body",
