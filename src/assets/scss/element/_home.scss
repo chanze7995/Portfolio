@@ -127,3 +127,47 @@
   font-size: $smaller-font-size;
   writing-mode: vertical-lr;
 }
+
+// Animation
+.home__info,
+.home__perfil {
+  position: relative;
+}
+.home__info {
+  animation: down 2s ease;
+}
+.home__perfil {
+  opacity: 0;
+  animation: down 2s ease 0.4s forwards;
+}
+.home__social {
+  opacity: 0;
+  animation: up 2s ease 0.8s forwards;
+}
+.home__scroll {
+  opacity: 0;
+  animation: up 2s ease 0.8s forwards;
+}
+
+@keyframes down {
+  0% {
+    top: -5rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    bottom: -5rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+// duration timing-function delay iteration-count direction fill-mode;
