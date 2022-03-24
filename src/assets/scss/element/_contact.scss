@@ -5,7 +5,7 @@
 
 .contact__title {
   text-align: center;
-  font-size: $h3-font-size;
+  font-size: $normal-font-size;
   margin-bottom: 1.5rem;
 }
 
@@ -34,7 +34,7 @@
 
 .contact__card-title,
 .contact__card-data {
-  font-size: $small-font-size;
+  font-size: $little-font-size;
 }
 
 .contact__card-title {
@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 0.25rem;
-  font-size: $small-font-size;
+  font-size: $little-font-size;
   color: $primary-color;
 }
 
@@ -96,7 +96,7 @@
   top: -0.75rem;
   left: 1.25rem;
   padding: 0.25rem;
-  font-size: $small-font-size;
+  font-size: $little-font-size;
   z-index: 10;
 }
 

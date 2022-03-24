@@ -14,7 +14,7 @@
 }
 
 .services__title {
-  font-size: $h3-font-size;
+  font-size: $normal-font-size;
   margin-bottom: 2.5rem;
 }
 
@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
-  font-size: $small-font-size;
+  font-size: $little-font-size;
   color: $primary-color;
   cursor: pointer;
 }
@@ -78,13 +78,13 @@
 
 .services__modal-title {
   margin-bottom: 1rem;
-  font-size: $h3-font-size;
+  font-size: $normal-font-size;
   color: $primary-color;
 }
 
 .services__modal-description {
   margin-bottom: 2rem;
-  font-size: $small-font-size;
+  font-size: $little-font-size;
 }
 
 .services__modal-list {
@@ -104,5 +104,5 @@
 }
 
 .services__modal-info {
-  font-size: $small-font-size;
+  font-size: $little-font-size;
 }
