@@ -8,6 +8,7 @@
     background-color: themed(container-color);
     box-shadow: themed(card-box-shadow);
   }
+
   padding: 1.5rem;
   border-radius: 1.25rem;
 }
@@ -21,6 +22,7 @@
 }
 
 .skills__box {
+  height: 70%;
   display: flex;
   justify-content: center;
   column-gap: 2.5rem;

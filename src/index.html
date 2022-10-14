@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
   <meta name="viewport" content="<%= htmlWebpackPlugin.options.viewport %>">
   <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
   <meta name="Keywords" content="<%= htmlWebpackPlugin.options.Keywords %>">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body class="theme-dark">
   <div class="app-root " id="app-root">
     <header class="header" id="header">
@@ -25,7 +29,7 @@
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <i class='bx bx-user' ></i>
+                <i class='bx bx-user'></i>
               </a>
             </li>
             <li class="nav__item">
@@ -35,17 +39,17 @@
             </li>
             <li class="nav__item">
               <a href="#services" class="nav__link">
-                <i class='bx bx-briefcase-alt-2' ></i>
+                <i class='bx bx-briefcase-alt-2'></i>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#sideProject" class="nav__link">
-                <i class='bx bx-bookmarks' ></i>
+              <a href="#side-project" class="nav__link">
+                <i class='bx bx-bookmarks'></i>
               </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class='bx bx-message-square-detail' ></i>
+                <i class='bx bx-message-square-detail'></i>
               </a>
             </li>
           </ul>
@@ -60,7 +64,8 @@
             <h1 class="home__name">Chanze Wu 吳權哲</h1>
             <h3 class="home__title">前端工程師</h3>
             <div class="home__buttons">
-              <a download="" href="<%= require('./assets/pdf/Chanze-Wu_CV.pdf')%>" class="button button--transparent">下載 CV</a>
+              <a download="" href="<%= require('./assets/pdf/吳權哲(Chanze Wu)_CV.pdf')%>"
+                class="button button--transparent">下載 CV</a>
               <a href="#about" class="button">關於我</a>
             </div>
           </div>
@@ -68,18 +73,19 @@
             <img src="<%= require('./assets/images/perfil.png')%>" alt="" class="home__img">
           </div>
           <div class="home__social">
-            <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank" class="home__social-link">
+            <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank"
+              class="home__social-link">
               <i class='bx bxl-linkedin-square'></i>
             </a>
             <a href="https://github.com/chanze7995" target="_blank" class="home__social-link">
               <i class='bx bxl-github'></i>
             </a>
             <a href="https://codepen.io/Chanze7995/" target="_blank" class="home__social-link">
-              <i class='bx bxl-codepen' ></i>
+              <i class='bx bxl-codepen'></i>
             </a>
           </div>
           <a href="" class="home__scroll">
-            <i class='bx bx-mouse home__scroll-icon' ></i>
+            <i class='bx bx-mouse home__scroll-icon'></i>
             <span class="home__scroll-name">向下滑</span>
           </a>
         </div>
@@ -125,7 +131,7 @@
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">Html</h3>
+                    <h3 class="skills__name">HTML</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
@@ -176,21 +182,21 @@
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">Html</h3>
+                    <h3 class="skills__name">Adobe Illustrator</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">CSS</h3>
+                    <h3 class="skills__name">Adobe Photoshop</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">Javascript</h3>
+                    <h3 class="skills__name">Adobe XD</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
@@ -199,21 +205,21 @@
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">Webpack</h3>
+                    <h3 class="skills__name">Creo Parametric</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">Git</h3>
+                    <h3 class="skills__name">Rhinoceros 3D</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
                   <div>
-                    <h3 class="skills__name">Vue.js</h3>
+                    <h3 class="skills__name">KeyShot</h3>
                     <span class="skills__level"></span>
                   </div>
                 </div>
@@ -233,27 +239,27 @@
               <div class="services__modal-content">
                 <i class='bx bx-x services__modal-close'></i>
                 <h3 class="services__modal-title">前端工程師</h3>
-                <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
+                <p class="services__modal-description">具有能力開發前端網頁應用程式。擁有高執行力，樂於作為一個學習新技術、精進自己能力的開發者。</p>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">完整實踐操作介面於瀏覽器</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">建立自適應網頁(RWD)</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">掌握系統性地建構頁面應用</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">串接資料的交互</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">了解版本控制操作</p>
                   </li>
                 </ul>
               </div>
@@ -266,27 +272,27 @@
               <div class="services__modal-content">
                 <i class='bx bx-x services__modal-close'></i>
                 <h3 class="services__modal-title">UI/UX 設計師</h3>
-                <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
+                <p class="services__modal-description">具有設計出符合使用者使用習慣的介面設計能力。能夠負責設計產品介面與互動方式，並維持使用者在使用上的直覺與易用性。</p>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">強化使用者體驗</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">實踐包容性設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">介面原型設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">動態互動設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">產品研究分析</p>
                   </li>
                 </ul>
               </div>
@@ -299,27 +305,28 @@
               <div class="services__modal-content">
                 <i class='bx bx-x services__modal-close'></i>
                 <h3 class="services__modal-title">視覺設計師</h3>
-                <p class="services__modal-description">一些描述一些描述一些描述一些描述一些描述一些描述一些描述</p>
+                <p class="services__modal-description">
+                  能根據品牌形象設計出活動主視覺、網頁Banner與各式輸出產品的能力。重視排版、產品修圖與各種平面素材，擅長於與印刷廠溝通、紙樣材質。</p>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">平面設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">網站視覺設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">展場設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">mascot設計</p>
                   </li>
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">一些描述</p>
+                    <p class="services__modal-info">產品企劃宣傳</p>
                   </li>
                 </ul>
               </div>
@@ -327,51 +334,116 @@
           </div>
         </div>
       </section>
-      <section class="sideProject section" id="sideProject">
+      <section class="side-project section" id="side-project">
         <span class="section__subtitle">作品集</span>
         <h2 class="section__title">個人專案</h2>
-        <div class="sideProject__filters">
-          <span class="sideProject__item active-item" data-name="all">全部</span>
-          <span class="sideProject__item" data-name="app">小功能</span>
-          <span class="sideProject__item" data-name="website">網站</span>
-          <span class="sideProject__item" data-name="layout">切版</span>
+        <div class="side-project__filters">
+          <span class="side-project__item active-item" data-name="all">全部</span>
+          <span class="side-project__item" data-name="website">網站</span>
+          <span class="side-project__item" data-name="app">小功能</span>
+          <span class="side-project__item" data-name="layout">切版</span>
         </div>
-        <div class="sideProject__container container grid">
-          <div class="sideProject__card" data-name="layout">
-            <img src="<%=require('./assets/images/work1.jpg')%>" alt="" class="sideProject__img">
-            <h3 class="sideProject__title">名稱</h3>
-            <a href="" class="sideProject__button">
-              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-            </a>
+        <div class="side-project__container container grid">
+          <div class="side-project__card" data-name="website">
+            <img src="<%=require('./assets/images/side-project/Cafe E-commerce.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">Caffeine with Mike 麥克咖啡因</h3>
+            <p class="side-project__description">以 Vue3.js 練習開發 SPA 電商網頁</p>
+            <div class="side-project--button__container">
+              <a href="https://github.com/chanze7995/Cafe_E-commerce" target="_blank" class="side-project__button">
+                Project <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+              <a href="https://chanze7995.github.io/Cafe_E-commerce/" target="_blank" class="side-project__button">
+                Demo <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
           </div>
-          <div class="sideProject__card" data-name="website">
-            <img src="<%=require('./assets/images/work5.jpg')%>" alt="" class="sideProject__img">
-            <h3 class="sideProject__title">名稱</h3>
-            <a href="" class="sideProject__button">
-              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-            </a>
+          <div class="side-project__card" data-name="app">
+            <img src="<%=require('./assets/images/side-project/Invoice List.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title"> Invoice App 請款單記帳列表</h3>
+            <p class="side-project__description">以 Vue3.js 練習製作請款單記帳列表，<br>練習使用 Firebase。</p>
+            <div class="side-project--button__container">
+              <a href="https://github.com/chanze7995/Invoice_App" target="_blank" class="side-project__button">
+                Project <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+              <a href="https://chanze7995.github.io/Invoice_App/" target="_blank" class="side-project__button">
+                Demo <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
           </div>
-          <div class="sideProject__card" data-name="app">
-            <img src="<%=require('./assets/images/work3.jpg')%>" alt="" class="sideProject__img">
-            <h3 class="sideProject__title">名稱</h3>
-            <a href="" class="sideProject__button">
-              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-            </a>
+          <div class="side-project__card" data-name="app">
+            <img src="<%=require('./assets/images/side-project/Tic Tac Toe.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title"> Tic Tac Toe 井字棋</h3>
+            <p class="side-project__description">以 Vue3.js 練習製作井字棋遊戲，<br>練習使用 Tailwind CSS。</p>
+            <div class="side-project--button__container">
+              <a href="https://github.com/chanze7995/Tic-Tac-Toe" target="_blank" class="side-project__button">
+                Project <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+              <a href="https://chanze7995.github.io/Tic-Tac-Toe/" target="_blank" class="side-project__button">
+                Demo <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
           </div>
-          <div class="sideProject__card" data-name="layout">
-            <img src="<%=require('./assets/images/work1.jpg')%>" alt="" class="sideProject__img">
-            <h3 class="sideProject__title">名稱</h3>
-            <a href="" class="sideProject__button">
-              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-            </a>
+          <div class="side-project__card" data-name="app">
+            <img src="<%=require('./assets/images/side-project/Todo List.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">Todo List 任務待辦</h3>
+            <p class="side-project__description">以原生 Javascript 練習開發 Todo List</p>
+            <div class="side-project--button__container">
+              <a href="https://codepen.io/Chanze7995/pen/ExWGqPy" target="_blank" class="side-project__button">
+                CODEPEN <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
           </div>
-          <div class="sideProject__card" data-name="app">
-            <img src="<%=require('./assets/images/work4.jpg')%>" alt="" class="sideProject__img">
-            <h3 class="sideProject__title">名稱</h3>
-            <a href="" class="sideProject__button">
-              Demo <i class='bx bx-right-arrow-alt sideProject__icon' ></i>
-            </a>
+          <div class="side-project__card" data-name="app">
+            <img src="<%=require('./assets/images/side-project/Piano.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">前端框架 Vue.js Piano</h3>
+            <p class="side-project__description">以 Vue2.js 練習框架使用</p>
+            <div class="side-project--button__container">
+              <a href="https://codepen.io/Chanze7995/pen/jOOZyEX" target="_blank" class="side-project__button">
+                CODEPEN <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
           </div>
+          <div class="side-project__card" data-name="layout">
+            <img src="<%=require('./assets/images/side-project/Cocktail.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">Cocktail 捲動式網頁</h3>
+            <p class="side-project__description">以 Bootstrap 結合 skrollr 製作網頁</p>
+            <div class="side-project--button__container">
+              <a href="https://codepen.io/Chanze7995/pen/MWWbOxK" target="_blank" class="side-project__button">
+                CODEPEN <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
+          </div>
+          <div class="side-project__card" data-name="layout">
+            <img src="<%=require('./assets/images/side-project/Space.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">Space 網頁佈局</h3>
+            <p class="side-project__description">以 Bootstrap 應用 padding 規劃技巧</p>
+            <div class="side-project--button__container">
+              <a href="https://codepen.io/Chanze7995/pen/VwwLMrq" target="_blank" class="side-project__button">
+                CODEPEN <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
+          </div>
+          <div class="side-project__card" data-name="layout">
+            <img src="<%=require('./assets/images/side-project/Weather Box.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">Weather box</h3>
+            <p class="side-project__description">以 CSS 開發網頁動畫</p>
+            <div class="side-project--button__container">
+              <a href="https://codepen.io/Chanze7995/pen/GVYELW" target="_blank" class="side-project__button">
+                CODEPEN <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
+          </div>
+          <div class="side-project__card" data-name="layout">
+            <img src="<%=require('./assets/images/side-project/Business Card.png')%>" alt="" class="side-project__img">
+            <h3 class="side-project__title">Business Card</h3>
+            <p class="side-project__description">練習網頁排版</p>
+            <div class="side-project--button__container">
+              <a href="https://codepen.io/Chanze7995/pen/vqWjbE" target="_blank" class="side-project__button">
+                CODEPEN <i class='bx bx-right-arrow-alt side-project__icon'></i>
+              </a>
+            </div>
+          </div>
+          
         </div>
       </section>
       <section class="contact section" id="contact">
@@ -390,7 +462,7 @@
                 </a>
               </div>
               <div class="contact__card">
-                <i class="bx bx-phone contact__card-icon" ></i>
+                <i class="bx bx-phone contact__card-icon"></i>
                 <h3 class="contact__card-title">Phone</h3>
                 <span class="contact__card-data">0963917660</span>
                 <a href="tel:+886-963917660" target="_blank" class="contact__button">
@@ -398,10 +470,11 @@
                 </a>
               </div>
               <div class="contact__card">
-                <i class="bx bxl-linkedin-square contact__card-icon" ></i>
+                <i class="bx bxl-linkedin-square contact__card-icon"></i>
                 <h3 class="contact__card-title">LinkedIn</h3>
                 <span class="contact__card-data">吳權哲 (Chanze Wu)</span>
-                <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank" class="contact__button">
+                <a href="https://www.linkedin.com/in/%E6%AC%8A%E5%93%B2-%E5%90%B3-chanze7995/" target="_blank"
+                  class="contact__button">
                   聯絡我 <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
@@ -441,7 +514,7 @@
             <a href="#services" class="footer__link">Services</a>
           </li>
           <li>
-            <a href="#sideProject" class="footer__link">Side Project</a>
+            <a href="#side-project" class="footer__link">Side Project</a>
           </li>
         </ul>
         <ul class="footer__social">
@@ -460,4 +533,5 @@
     </footer>
   </div>
 </body>
+
 </html>

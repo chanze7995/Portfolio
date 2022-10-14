@@ -1,8 +1,8 @@
-.sideProject__container {
+.side-project__container {
   padding-top: 1rem;
 }
 
-.sideProject__filters {
+.side-project__filters {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,10 +10,11 @@
   margin-bottom: 2rem;
 }
 
-.sideProject__item {
+.side-project__item {
   @include themify($themes) {
     color: themed(title-color);
   }
+
   padding: 0.25rem 0.75rem;
   font-weight: $font-medium;
   border-radius: 0.5rem;
@@ -24,47 +25,59 @@
   @include themify($themes) {
     color: themed(body-color);
   }
+
   background-color: $primary-color;
 }
 
-.sideProject__card {
+.side-project__card {
   @include themify($themes) {
     background-color: themed(container-color);
     box-shadow: themed(card-box-shadow);
   }
+
   padding: 1rem;
   border-radius: 1rem;
 }
 
-.sideProject__card-hide {
+.side-project__card-hide {
   display: none;
 }
 
-.sideProject__img {
+.side-project__img {
   border-radius: 1rem;
   margin-bottom: 0.75rem;
 }
 
-.sideProject__title {
+.side-project__title {
   margin-bottom: 0.25rem;
   font-size: $small-font-size;
   font-weight: $font-medium;
 }
 
-.sideProject__button {
+.side-project__description{
+  line-height: 1.5;
+}
+
+.side-project--button__container {
+  display: flex;
+}
+
+.side-project__button {
   width: max-content;
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
   color: $primary-color;
   font-size: $little-font-size;
 }
 
-.sideProject__button:hover .sideProject__icon {
+.side-project__button:hover .side-project__icon {
   transform: translateX(0.25rem);
 }
 
-.sideProject__icon {
+.side-project__icon {
   font-size: 1rem;
   transition: 0.4s;
 }

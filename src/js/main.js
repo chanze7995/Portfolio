@@ -33,8 +33,8 @@ modalCloseBtn.forEach((item, id) => {
 });
 
 // FILTER SIDE PROJECT GALLERY
-const sideProjectFilters = document.querySelector(".sideProject__filters");
-const sideProjectCard = document.querySelectorAll(".sideProject__card");
+const sideProjectFilters = document.querySelector(".side-project__filters");
+const sideProjectCard = document.querySelectorAll(".side-project__card");
 
 sideProjectFilters.addEventListener("click", (item) => {
   let filterItem = item.target;
@@ -44,14 +44,14 @@ sideProjectFilters.addEventListener("click", (item) => {
     sideProjectCard.forEach((card) => {
       let cardType = card.getAttribute("data-name");
       if (filterType == cardType || filterType == "all") {
-        card.classList.remove("sideProject__card-hide");
+        card.classList.remove("side-project__card-hide");
       } else {
-        card.classList.add("sideProject__card-hide");
+        card.classList.add("side-project__card-hide");
       }
     });
   };
 
-  if (filterItem.classList.contains("sideProject__item")) {
+  if (filterItem.classList.contains("side-project__item")) {
     activeItem.classList.remove("active-item");
     filterItem.classList.add("active-item");
     cardFilter();
