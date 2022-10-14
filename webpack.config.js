@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
@@ -69,9 +70,13 @@ module.exports = {
       Keywords: "前端開發、前端、工程師、作品集",
       // inject: "body",
     }),
+    new FaviconsWebpackPlugin(
+      "./assets/images/logo.png"
+    ),
     new MiniCssExtractPlugin({
       filename: "[name].[hash:7].css",
     }),
     new CleanWebpackPlugin(),
-  ],
+    
+  ]
 };
